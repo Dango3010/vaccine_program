@@ -1,11 +1,13 @@
 //render each input of the form
 export default function InputWithName ({
   state, setState, title, 
-  name, inputType, intervalOne
+  name, inputType, intervalOne,
+  placeholder, intervalTwo
 }) {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
+    
     if (name === 'vacName') {
       setState({
         ...state,
@@ -16,6 +18,11 @@ export default function InputWithName ({
         ...state,
         [name]: [...intervalOne, value]
       });
+    } else if (name === 'intervalTwo') {
+      setState({
+        ...state,
+        [name]: [...intervalTwo, value]
+      })
     }
   }
 
@@ -28,8 +35,8 @@ export default function InputWithName ({
         style={{padding: 8, fontSize: 16, marginLeft: 11}}
         type={inputType}
         name={name}
-        onChange={handleChange}
-        placeholder="Enter a vaccine name"
+        onBlur={handleChange}
+        placeholder={placeholder}
       />
     </div>
   );
