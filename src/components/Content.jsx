@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
+import '../styles/buttonStyle.css'
 
 import InputWithName from './helpers/Input'
 import data from './data/data'
 
 // main content that includes all big portion components
-export default function Content() {  
+export default function Content({setChangePage}) {  
   const [name1, setName1] = useState({
     vacName: "",
   });
@@ -18,9 +19,14 @@ export default function Content() {
     intervalTwo: [],
   });
 
+  const onSubmit = () => {
+    data.push(name1, name2, name3);
+    setChangePage(true);
+  };
+
   return (
     <div>
-      <div>
+      <div style={{textAlign: 'initial'}}>
         <InputWithName 
           title='Vaccine One'
           name='vacName'
@@ -112,6 +118,14 @@ export default function Content() {
         </div>
       </div>
 
+      <button 
+        className='button'
+        onClick={onSubmit}
+      >
+        <div id='text'>Submit</div>
+      </button>
+
     </div>
   )
 }
+

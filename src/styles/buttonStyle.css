@@ -1,0 +1,18 @@
+#text {
+  font-size: 14;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button {
+  margin-top: 17;
+  width: 170;
+  margin-left: 130;
+  height: 40;
+  background-color: #D9D9D9;
+  flex: 1;
+  justify-content: center;
+  padding: 2;
+}
+
