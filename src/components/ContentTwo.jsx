@@ -25,7 +25,7 @@ function ContentTwo({setChangePage}) {
           <tbody>
             <tr>
               <td className='pad'>{data[0].vacName}, {data[1].vacName}, {data[2].vacName}</td>
-              <td className='pad'>Nov 3rd 2023</td>
+              <td className='pad'>Nov 18th 2023</td>
               <td>
                 <select id='text'>
                   <option value='completed'>completed</option>
@@ -36,7 +36,7 @@ function ContentTwo({setChangePage}) {
 
             <tr>
               <td className='pad'>{data[1].vacName}, {data[2].vacName}</td>
-              <td className='pad'>Dec 3rd 2023 - Jan 3rd 2023</td>
+              <td className='pad'>Dec 18th 2023 - Jan 18th 2023</td>
               <td>
                 <select id='text'>
                   <option value='completed'>completed</option>
@@ -47,7 +47,7 @@ function ContentTwo({setChangePage}) {
 
             <tr>
               <td className='pad'>{data[2].vacName}</td>
-              <td className='pad'>Jun 3rd 2023 - July 3rd 2023</td>
+              <td className='pad'>Jun 18th 2023 - July 18th 2023</td>
               <td>
                 <select id='text'>
                   <option value='completed'>completed</option>

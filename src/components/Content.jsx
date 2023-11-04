@@ -48,7 +48,7 @@ export default function Content({setChangePage}) {
         />
         <div>
           <InputWithName 
-            title='Interval one min (weeks)'
+            title='1st dosing interval min (weeks)'
             name='intervalOne'
             placeholder='Enter a number'
             intervalOne={name2.intervalOne}
@@ -57,7 +57,7 @@ export default function Content({setChangePage}) {
             inputType='number'
           />
           <InputWithName 
-            title='Interval one max (weeks)'
+            title='1st dosing interval max (weeks)'
             name='intervalOne'
             placeholder='Enter a number'
             intervalOne={name2.intervalOne}
@@ -79,7 +79,7 @@ export default function Content({setChangePage}) {
         />
         <div>
           <InputWithName 
-            title='Interval one min (weeks)'
+            title='1st dosing interval min (weeks)'
             name='intervalOne'
             placeholder='Enter a number'
             intervalOne={name3.intervalOne}
@@ -88,7 +88,7 @@ export default function Content({setChangePage}) {
             inputType='number'
           />
           <InputWithName 
-            title='Interval one max (weeks)'
+            title='1st dosing interval max (weeks)'
             name='intervalOne'
             placeholder='Enter a number'
             intervalOne={name3.intervalOne}
@@ -98,7 +98,7 @@ export default function Content({setChangePage}) {
           />
 
           <InputWithName 
-            title='Interval two min (weeks)'
+            title='2nd dosing interval min (weeks)'
             name='intervalTwo'
             placeholder='Enter a number'
             intervalTwo={name3.intervalTwo}
@@ -107,7 +107,7 @@ export default function Content({setChangePage}) {
             inputType='number'
           />
           <InputWithName 
-            title='Interval two max (weeks)'
+            title='2nd dosing interval max (weeks)'
             name='intervalTwo'
             placeholder='Enter a number'
             intervalTwo={name3.intervalTwo}
