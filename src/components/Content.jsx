@@ -30,7 +30,7 @@ export default function Content({setChangePage}) {
         <InputWithName 
           title='Vaccine One'
           name='vacName'
-          placeholder="Enter a vaccine name"
+          placeholder="Enter kn map name"
           setState={setName1}
           state={name1}
           inputType='text'
